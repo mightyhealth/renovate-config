@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "config:base",
+    ":labels(dependencies,bot)",
+    ":maintainLockFilesWeekly",
+    ":semanticCommits",
+    ":separateMajorReleases",
+    ":timezone(America/Sao_Paulo)",
+    "schedule:earlyMondays"
+  ],
+  "stabilityDays": 30,
+  "major": { "automerge": false },
+  "minor": { "automerge": false },
+  "automerge": true,
+  "platformAutomerge": true,
+  "reviewersFromCodeOwners": true,
+  "docker": {
+    "additionalBranchPrefix": "docker-",
+    "commitMessagePrefix": "[DOCKER]"
+  },
+  "js": { "additionalBranchPrefix": "js-", "commitMessagePrefix": "[JS]" }
+}
