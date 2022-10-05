@@ -30,13 +30,9 @@
 
   "packageRules": [
     {
-      "matchPackagePatterns": ["^@mightyhealth"],
-      "excludePackageNames": ["@mightyhealth/library"]
-    },
-    {
-      "matchPackageNames": ["@mightyhealth/angular-web-components"],
+      "matchPackageNames": ["^@mightyhealth"],
       "enabled": false
     }
-  ],
-  "ignoreDeps": ["@mightyhealth/web-components"]
+  ]
+  // "ignoreDeps": ["@mightyhealth/web-components"]
 }
