@@ -27,12 +27,9 @@
     "additionalBranchPrefix": "terraform-",
     "commitMessagePrefix": "[TF]"
   },
-
-  "packageRules": [
-    {
-      "matchPackageNames": ["^@mightyhealth"],
-      "enabled": false
-    }
+  "ignoreDeps": [
+    "@mightyhealth/library",
+    "@mightyhealth/web-components",
+    "@mightyhealth/angular-web-components"
   ]
-  // "ignoreDeps": ["@mightyhealth/web-components"]
 }
