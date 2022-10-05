@@ -19,6 +19,13 @@
     "additionalBranchPrefix": "docker-",
     "commitMessagePrefix": "[DOCKER]"
   },
-  "js": { "additionalBranchPrefix": "js-", "commitMessagePrefix": "[JS]" },
-  "excludePackageNames": ["^@mightyhealth"]
+  "js": {
+    "additionalBranchPrefix": "js-",
+    "commitMessagePrefix": "[JS]",
+    "excludePackageNames": ["^@mightyhealth"]
+  },
+  "terraform": {
+    "additionalBranchPrefix": "terraform-",
+    "commitMessagePrefix": "[TF]"
+  }
 }
