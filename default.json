@@ -4,7 +4,7 @@
     "config:base",
     ":labels(dependencies,bot)",
     ":maintainLockFilesWeekly",
-    ":semanticCommits",
+    // ":semanticCommits",
     ":separateMajorReleases",
     ":timezone(America/Sao_Paulo)",
     "schedule:earlyMondays"
@@ -17,15 +17,19 @@
   "reviewersFromCodeOwners": true,
   "docker": {
     "additionalBranchPrefix": "docker-",
-    "commitMessagePrefix": "[DOCKER]"
+    "commitMessagePrefix": "[docker]"
   },
   "js": {
     "additionalBranchPrefix": "js-",
-    "commitMessagePrefix": "[JS]"
+    "commitMessagePrefix": "[js]"
   },
   "terraform": {
     "additionalBranchPrefix": "terraform-",
-    "commitMessagePrefix": "[TF]"
+    "commitMessagePrefix": "[tf]"
+  },
+  "circleci": {
+    "additionalBranchPrefix": "circleci-",
+    "commitMessagePrefix": "[ci]"
   },
   "ignoreDeps": [
     "@mightyhealth/library",
