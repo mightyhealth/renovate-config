@@ -20,9 +20,5 @@
     "commitMessagePrefix": "[DOCKER]"
   },
   "js": { "additionalBranchPrefix": "js-", "commitMessagePrefix": "[JS]" },
-  "packageRules": [
-    {
-      "excludePackageNames": ["^@mightyhealth"]
-    }
-  ]
+  "excludePackageNames": ["^@mightyhealth"]
 }
