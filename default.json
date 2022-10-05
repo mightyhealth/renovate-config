@@ -21,11 +21,17 @@
   },
   "js": {
     "additionalBranchPrefix": "js-",
-    "commitMessagePrefix": "[JS]",
-    "excludePackageNames": ["^@mightyhealth"]
+    "commitMessagePrefix": "[JS]"
   },
   "terraform": {
     "additionalBranchPrefix": "terraform-",
     "commitMessagePrefix": "[TF]"
-  }
+  },
+
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^@mightyhealth"],
+      "excludePackageNames": ["@mightyhealth/library"]
+    }
+  ]
 }
