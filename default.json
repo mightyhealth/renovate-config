@@ -35,6 +35,7 @@
   "ignoreDeps": [
     "@mightyhealth/library",
     "@mightyhealth/web-components",
-    "@mightyhealth/angular-web-components"
+    "@mightyhealth/angular-web-components",
+    "@mightyhealth/experiments"
   ]
 }
