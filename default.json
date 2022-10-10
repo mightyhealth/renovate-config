@@ -4,7 +4,7 @@
     "config:base",
     ":labels(dependencies,bot)",
     ":maintainLockFilesWeekly",
-    // ":semanticCommits",
+    ":semanticCommits",
     ":separateMajorReleases",
     ":timezone(America/Sao_Paulo)",
     "schedule:earlyMondays"
