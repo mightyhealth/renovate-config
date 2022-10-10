@@ -15,9 +15,7 @@
   "platformAutomerge": true,
   "major": { "automerge": false },
   "minor": { "automerge": false },
-  "automerge": true,
-  "platformAutomerge": true,
-  "reviewersFromCodeOwners": true,
+  "reviewers": ["team:mightyhealth-devs"],
   "docker": {
     "additionalBranchPrefix": "docker-",
     "commitMessagePrefix": "[docker]"
