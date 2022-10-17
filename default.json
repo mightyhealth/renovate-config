@@ -10,7 +10,7 @@
     "schedule:earlyMondays"
   ],
   "stabilityDays": 30,
-  "prCreation": "not-pending",
+  "prCreation": "immediate",
   "automerge": true,
   "platformAutomerge": true,
   "major": { "automerge": false },
