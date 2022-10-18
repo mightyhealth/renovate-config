@@ -7,7 +7,7 @@
     ":semanticCommits",
     ":separateMajorReleases",
     ":timezone(America/Sao_Paulo)",
-    // "schedule:earlyMondays"
+    "schedule:earlyMondays"
   ],
   "stabilityDays": 30,
   "internalChecksFilter": "strict",
