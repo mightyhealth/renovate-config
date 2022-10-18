@@ -10,6 +10,7 @@
     // "schedule:earlyMondays"
   ],
   "stabilityDays": 30,
+  "internalChecksFilter": "strict",
   "prCreation": "immediate",
   "automerge": true,
   "platformAutomerge": true,
