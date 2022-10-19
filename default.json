@@ -11,7 +11,7 @@
   ],
   "stabilityDays": 30,
   "internalChecksFilter": "strict",
-  "prCreation": "immediate",
+  "prCreation": "status-success",
   "automerge": true,
   "platformAutomerge": true,
   "major": { "automerge": false },
