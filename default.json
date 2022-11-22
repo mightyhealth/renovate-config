@@ -38,5 +38,27 @@
     "@mightyhealth/web-components",
     "@mightyhealth/angular-web-components",
     "@mightyhealth/experiments"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["circleci"],
+      "matchPackageNames": ["circleci/node"],
+      "versioning": "lts"
+    },
+    {
+      "matchManagers": ["docker"],
+      "matchPackageNames": ["node"],
+      "versioning": "lts-alpine"
+    },
+    {
+      "matchManagers": ["docker"],
+      "matchPackageNames": ["node"],
+      "versioning": "lts-alpine"
+    },
+    {
+      "matchManagers": ["nvm"],
+      "matchPackageNames": ["node"],
+      "versioning": "18.12.1"
+    }
   ]
 }
