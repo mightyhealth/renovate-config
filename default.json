@@ -12,6 +12,7 @@
   ],
   "stabilityDays": 30,
   "internalChecksFilter": "strict",
+  "branchConcurrentLimit": 0,
   "prCreation": "status-success",
   "prConcurrentLimit": 0,
   "automerge": true,
