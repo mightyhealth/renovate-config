@@ -18,6 +18,7 @@
   "major": {
     "automerge": false
   },
+  ":semanticCommitTypeAll(build)"
   // "minor": {
   //   "automerge": false
   // },
