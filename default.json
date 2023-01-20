@@ -17,9 +17,9 @@
   "major": {
     "automerge": false
   },
-  "minor": {
-    "automerge": false
-  },
+  // "minor": {
+  //   "automerge": false
+  // },
   // "reviewers": ["team:mightyhealth-devs"],
   // "docker": {
   //   "additionalBranchPrefix": "docker-",
