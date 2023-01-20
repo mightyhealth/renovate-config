@@ -5,6 +5,7 @@
     ":labels(dependencies,bot)",
     ":maintainLockFilesWeekly",
     ":semanticCommits",
+    ":semanticCommitTypeAll(build)"
     ":separateMajorReleases"
     // ":timezone(America/Sao_Paulo)",
     // "schedule:earlyMondays"
@@ -18,7 +19,6 @@
   "major": {
     "automerge": false
   },
-  ":semanticCommitTypeAll(build)"
   // "minor": {
   //   "automerge": false
   // },
