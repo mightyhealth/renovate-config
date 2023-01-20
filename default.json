@@ -5,7 +5,7 @@
     ":labels(dependencies,bot)",
     ":maintainLockFilesWeekly",
     ":semanticCommits",
-    ":semanticCommitTypeAll(build)"
+    ":semanticCommitTypeAll(build)",
     ":separateMajorReleases"
     // ":timezone(America/Sao_Paulo)",
     // "schedule:earlyMondays"
