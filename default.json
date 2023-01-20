@@ -5,34 +5,38 @@
     ":labels(dependencies,bot)",
     ":maintainLockFilesWeekly",
     ":semanticCommits",
-    ":separateMajorReleases",
-    ":timezone(America/Sao_Paulo)",
-    "schedule:earlyMondays"
+    ":separateMajorReleases"
+    // ":timezone(America/Sao_Paulo)",
+    // "schedule:earlyMondays"
   ],
   "stabilityDays": 30,
   "internalChecksFilter": "strict",
   "prCreation": "status-success",
   "automerge": true,
   "platformAutomerge": true,
-  "major": { "automerge": false },
-  "minor": { "automerge": false },
+  "major": {
+    "automerge": false
+  },
+  "minor": {
+    "automerge": false
+  },
   // "reviewers": ["team:mightyhealth-devs"],
-  "docker": {
-    "additionalBranchPrefix": "docker-",
-    "commitMessagePrefix": "[docker]"
-  },
-  "js": {
-    "additionalBranchPrefix": "js-",
-    "commitMessagePrefix": "[js]"
-  },
-  "terraform": {
-    "additionalBranchPrefix": "terraform-",
-    "commitMessagePrefix": "[tf]"
-  },
-  "circleci": {
-    "additionalBranchPrefix": "circleci-",
-    "commitMessagePrefix": "[ci]"
-  },
+  // "docker": {
+  //   "additionalBranchPrefix": "docker-",
+  //   "commitMessagePrefix": "[docker]"
+  // },
+  // "js": {
+  //   "additionalBranchPrefix": "js-",
+  //   "commitMessagePrefix": "[js]"
+  // },
+  // "terraform": {
+  //   "additionalBranchPrefix": "terraform-",
+  //   "commitMessagePrefix": "[tf]"
+  // },
+  // "circleci": {
+  //   "additionalBranchPrefix": "circleci-",
+  //   "commitMessagePrefix": "[ci]"
+  // },
   "ignoreDeps": [
     "@mightyhealth/library",
     "@mightyhealth/web-components",
@@ -41,24 +45,40 @@
   ],
   "packageRules": [
     {
-      "matchManagers": ["circleci"],
-      "matchPackageNames": ["circleci/node"],
+      "matchManagers": [
+        "circleci"
+      ],
+      "matchPackageNames": [
+        "circleci/node"
+      ],
       "versioning": "lts"
     },
     {
-      "matchManagers": ["docker"],
-      "matchPackageNames": ["node"],
+      "matchManagers": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "node"
+      ],
       "versioning": "lts-alpine"
     },
     {
-      "matchManagers": ["docker"],
-      "matchPackageNames": ["node"],
+      "matchManagers": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "node"
+      ],
       "versioning": "lts-alpine"
     },
     {
-      "matchManagers": ["nvm"],
-      "matchPackageNames": ["node"],
-      "versioning": "18.12.1"
+      "matchManagers": [
+        "nvm"
+      ],
+      "matchPackageNames": [
+        "node"
+      ],
+      "versioning": "18.13.0"
     }
   ]
 }
