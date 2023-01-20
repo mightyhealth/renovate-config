@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    // "config:base",
     ":labels(dependencies,bot)",
     ":maintainLockFilesWeekly",
     ":semanticCommits",
@@ -11,11 +11,12 @@
     // "schedule:earlyMondays"
   ],
   "stabilityDays": 30,
-  "internalChecksFilter": "strict",
+  // "internalChecksFilter": "strict",
   "branchConcurrentLimit": 0,
   "prCreation": "status-success",
   "prConcurrentLimit": 0,
   "automerge": true,
+  "automergeType":"branch",
   "platformAutomerge": true,
   "major": {
     "automerge": false
