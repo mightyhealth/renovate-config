@@ -10,13 +10,14 @@
     // ":timezone(America/Sao_Paulo)",
     // "schedule:earlyMondays"
   ],
+  "dependencyDashboard": true,
   "stabilityDays": 30,
   // "internalChecksFilter": "strict",
   "branchConcurrentLimit": 0,
   "prCreation": "status-success",
   "prConcurrentLimit": 0,
   "automerge": true,
-  "automergeType":"branch",
+  "automergeType": "branch",
   "platformAutomerge": true,
   "major": {
     "automerge": false
