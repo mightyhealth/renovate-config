@@ -1,47 +1,25 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    // "config:base",
-    ":labels(dependencies,bot)",
-    ":maintainLockFilesWeekly",
-    ":semanticCommits",
-    ":semanticCommitTypeAll(build)",
-    ":separateMajorReleases"
-    // ":timezone(America/Sao_Paulo)",
-    // "schedule:earlyMondays"
+  "semanticCommits": "enabled",
+  "semanticCommitType": "build",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "labels": [
+    "dependencies",
+    "bot"
   ],
   "dependencyDashboard": true,
-  "stabilityDays": 30,
-  // "internalChecksFilter": "strict",
   "branchConcurrentLimit": 0,
-  "prCreation": "status-success",
   "prConcurrentLimit": 0,
-  "automerge": true,
+  "stabilityDays": 30,
+  "prCreation": "status-success",
   "automergeType": "branch",
+  "automerge": true,
   "platformAutomerge": true,
   "major": {
     "automerge": false
   },
-  // "minor": {
-  //   "automerge": false
-  // },
-  // "reviewers": ["team:mightyhealth-devs"],
-  // "docker": {
-  //   "additionalBranchPrefix": "docker-",
-  //   "commitMessagePrefix": "[docker]"
-  // },
-  // "js": {
-  //   "additionalBranchPrefix": "js-",
-  //   "commitMessagePrefix": "[js]"
-  // },
-  // "terraform": {
-  //   "additionalBranchPrefix": "terraform-",
-  //   "commitMessagePrefix": "[tf]"
-  // },
-  // "circleci": {
-  //   "additionalBranchPrefix": "circleci-",
-  //   "commitMessagePrefix": "[ci]"
-  // },
   "ignoreDeps": [
     "@mightyhealth/library",
     "@mightyhealth/web-components",
