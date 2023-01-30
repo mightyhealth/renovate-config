@@ -3,7 +3,8 @@
   "semanticCommits": "enabled",
   "semanticCommitType": "build",
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": true,
+    "automerge": true
   },
   "labels": [
     "dependencies",
