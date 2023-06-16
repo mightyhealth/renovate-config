@@ -2,10 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "semanticCommits": "enabled",
   "semanticCommitType": "build",
-  "lockFileMaintenance": {
-    "enabled": true,
-    "automerge": true
-  },
   "labels": [
     "dependencies",
     "bot"
@@ -13,7 +9,7 @@
   "dependencyDashboard": true,
   "branchConcurrentLimit": 0,
   "prConcurrentLimit": 0,
-  "stabilityDays": 30,
+  "stabilityDays": 90,
   "prCreation": "status-success",
   "automergeType": "branch",
   "automerge": true,
