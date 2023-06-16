@@ -9,7 +9,7 @@
   "dependencyDashboard": true,
   "branchConcurrentLimit": 0,
   "prConcurrentLimit": 0,
-  "stabilityDays": 30,
+  "stabilityDays": 90,
   "prCreation": "status-success",
   "automergeType": "branch",
   "automerge": true,
