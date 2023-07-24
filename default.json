@@ -59,6 +59,15 @@
         "node"
       ],
       "versioning": "18.13.0"
+    },
+    {
+      "matchDatasources": [
+        "gradle"
+      ],
+      "matchManagers": [
+        "gradle"
+      ],
+      "enabled": false
     }
   ]
 }
