@@ -12,6 +12,9 @@
   "automerge": true,
   "platformAutomerge": true,
   "matchUpdateTypes": ["patch", "minor"],
+  "major": {
+    "enabled": false
+  },
   "ignoreDeps": [
     "@mightyhealth/library",
     "@mightyhealth/web-components",
@@ -22,7 +25,7 @@
     {
       "enabled": true,
       "managers": ["npm"],
-      "updateTypes": ["minor", "patch"],
+      "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     },
     {
