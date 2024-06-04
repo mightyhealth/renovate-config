@@ -11,9 +11,6 @@
   "automergeType": "branch",
   "automerge": true,
   "platformAutomerge": true,
-  "major": {
-    "automerge": false
-  },
   "matchUpdateTypes": ["patch", "minor"],
   "ignoreDeps": [
     "@mightyhealth/library",
@@ -23,10 +20,9 @@
   ],
   "packageRules": [
     {
-      "managers": ["npm"],
       "enabled": true,
+      "managers": ["npm"],
       "updateTypes": ["minor", "patch"],
-      "stabilityDays": 90,
       "automerge": true
     },
     {
