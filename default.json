@@ -11,6 +11,10 @@
   "automergeType": "branch",
   "automerge": true,
   "platformAutomerge": true,
+  "major": {
+    "automerge": false
+  },
+  "matchUpdateTypes": ["patch", "minor"],
   "ignoreDeps": [
     "@mightyhealth/library",
     "@mightyhealth/web-components",
