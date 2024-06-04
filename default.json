@@ -7,7 +7,6 @@
   "dependencyDashboard": true,
   "branchConcurrentLimit": 3,
   "prConcurrentLimit": 6,
-  "stabilityDays": 90,
   "prCreation": "status-success",
   "automergeType": "branch",
   "automerge": true,
@@ -27,7 +26,8 @@
       "enabled": true,
       "managers": ["npm"],
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
+      "automerge": true,
+      "minimumReleaseAge": "3 days"
     },
     {
       "managers": [
