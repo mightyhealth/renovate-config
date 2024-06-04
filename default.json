@@ -2,21 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "semanticCommits": "enabled",
   "semanticCommitType": "build",
-  "labels": [
-    "dependencies",
-    "bot"
-  ],
+  "labels": ["dependencies", "bot"],
   "dependencyDashboard": true,
   "branchConcurrentLimit": 3,
-  "prConcurrentLimit": 6,
+  "prConcurrentLimit": 3,
   "stabilityDays": 90,
   "prCreation": "status-success",
   "automergeType": "branch",
   "automerge": true,
   "platformAutomerge": true,
-  "major": {
-    "automerge": false
-  },
   "ignoreDeps": [
     "@mightyhealth/library",
     "@mightyhealth/web-components",
@@ -25,48 +19,14 @@
   ],
   "packageRules": [
     {
-      "matchManagers": [
-        "circleci"
-      ],
-      "matchPackageNames": [
-        "circleci/node"
-      ],
-      "versioning": "lts"
+      "managers": ["npm"],
+      "enabled": true,
+      "updateTypes": ["minor", "patch"],
+      "stabilityDays": 90,
+      "automerge": true
     },
     {
-      "matchManagers": [
-        "docker"
-      ],
-      "matchPackageNames": [
-        "node"
-      ],
-      "versioning": "lts-alpine"
-    },
-    {
-      "matchManagers": [
-        "docker"
-      ],
-      "matchPackageNames": [
-        "node"
-      ],
-      "versioning": "lts-alpine"
-    },
-    {
-      "matchManagers": [
-        "nvm"
-      ],
-      "matchPackageNames": [
-        "node"
-      ],
-      "versioning": "18.13.0"
-    },
-    {
-      "matchDatasources": [
-        "gradle"
-      ],
-      "matchManagers": [
-        "gradle"
-      ],
+      "managers": ["dockerfile", "github-actions", "circleci", "terraform", "gradle", "nuget", "pub", "swift"],
       "enabled": false
     }
   ]
