@@ -29,7 +29,17 @@
       "automerge": true
     },
     {
-      "managers": ["dockerfile", "github-actions", "circleci", "terraform", "gradle", "nuget", "pub", "swift"],
+      "managers": [
+        "bundler",
+        "circleci",
+        "cocoapods",
+        "dockerfile",
+        "docker-compose",
+        "github-actions",
+        "gradle",
+        "gradle-wrapper",
+        "terraform"
+      ],
       "enabled": false
     }
   ]
