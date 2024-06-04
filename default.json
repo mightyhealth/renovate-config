@@ -1,6 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["group:allNonMajor"],
   "semanticCommits": "enabled",
   "semanticCommitType": "build",
   "labels": ["dependencies", "bot"],
@@ -42,6 +41,18 @@
         "terraform"
       ],
       "enabled": false
+    },
+    {
+      "groupName": "all patch dependencies",
+      "groupSlug": "all-patch",
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["patch"]
+    },
+    {
+      "groupName": "all minor dependencies",
+      "groupSlug": "all-minor",
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["minor"]
     }
   ]
 }
